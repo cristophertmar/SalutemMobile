@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Horarios">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_orange">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reservar Consulta"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/ly_filtros"
+                    android:visibility="gone"
+                    android:background="@drawable/background_filtro"
+                    android:layout_marginBottom="20dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:elevation="6dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="Médico:"
+                            android:textColor="@color/colorblue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            app:ms_highlightColor="@color/colorWhite"
+                            app:ms_baseColor="@color/colorblue"
+                            android:id="@+id/sp_medico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="Fecha:"
+                            android:textColor="@color/colorblue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textColor="@color/colorInput"
+                            android:textColorHint="@color/colorInput"
+                            android:layout_marginTop="17dp"
+                            android:id="@+id/et_fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorblue"
+                            android:hint="(Seleccionar)"
+                            android:inputType="text"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_buscar"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:text="Buscar"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boton_primary_sm" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_white"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="30dp">
+
+                <Button
+                    android:id="@+id/btn_editarFiltros"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:text="Editar Filtros"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/boton_primary_sm" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblueDark"
+                    android:text="04/08/2020"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
