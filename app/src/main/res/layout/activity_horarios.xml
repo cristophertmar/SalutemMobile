@@ -39,7 +39,7 @@
                     android:visibility="gone"
                     android:background="@drawable/background_filtro"
                     android:layout_marginBottom="20dp"
-                    android:paddingTop="25dp"
+                    android:paddingTop="10dp"
                     android:paddingBottom="20dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="25dp"
@@ -47,6 +47,22 @@
                     android:elevation="6dp"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_cerrarFiltro"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_cerrar"
+                            />
+
+                    </FrameLayout>
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -195,6 +211,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"

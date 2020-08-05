@@ -3,6 +3,7 @@ package com.example.salutem24;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -11,8 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.Calendar;
 
@@ -22,17 +25,23 @@ public class Horarios extends AppCompatActivity {
     EditText et_fecha;
     Button btn_editarFiltros, btn_buscar;
     LinearLayout ly_filtros;
+    ImageView iv_cerrarFiltro;
+
+    Dialog curriculum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_horarios );
 
+        curriculum = new Dialog( this );
+
         sp_medico = findViewById( R.id.sp_medico );
         et_fecha = findViewById( R.id.et_fecha );
         btn_editarFiltros = findViewById( R.id.btn_editarFiltros );
         ly_filtros = findViewById( R.id.ly_filtros );
         btn_buscar = findViewById( R.id.btn_buscar );
+        iv_cerrarFiltro = findViewById( R.id.iv_cerrarFiltro );
 
         et_fecha.setFocusable(false);
         et_fecha.setKeyListener(null);
@@ -78,5 +87,29 @@ public class Horarios extends AppCompatActivity {
             }
         } );
 
+        iv_cerrarFiltro.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ly_filtros.setVisibility( View.GONE );
+                btn_editarFiltros.setVisibility( View.VISIBLE );
+            }
+        } );
+
+    }
+
+    public void mostrarPopup( View v){
+        TextView txtClose;
+        curriculum.setContentView( R.layout.custompoppup );
+
+        txtClose = (TextView) curriculum.findViewById( R.id.txtClose );
+
+        txtClose.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                curriculum.dismiss();
+            }
+        } );
+
+        curriculum.show();
     }
 }
