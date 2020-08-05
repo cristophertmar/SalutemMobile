@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ public class Horarios extends AppCompatActivity {
     EditText et_fecha;
     Button btn_editarFiltros, btn_buscar;
     LinearLayout ly_filtros;
-    ImageView iv_cerrarFiltro;
+    TextView tv_cerrarFiltro;
 
     Dialog curriculum;
 
@@ -41,7 +42,7 @@ public class Horarios extends AppCompatActivity {
         btn_editarFiltros = findViewById( R.id.btn_editarFiltros );
         ly_filtros = findViewById( R.id.ly_filtros );
         btn_buscar = findViewById( R.id.btn_buscar );
-        iv_cerrarFiltro = findViewById( R.id.iv_cerrarFiltro );
+        tv_cerrarFiltro = findViewById( R.id.tv_cerrarFiltro );
 
         et_fecha.setFocusable(false);
         et_fecha.setKeyListener(null);
@@ -87,7 +88,7 @@ public class Horarios extends AppCompatActivity {
             }
         } );
 
-        iv_cerrarFiltro.setOnClickListener( new View.OnClickListener() {
+        tv_cerrarFiltro.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ly_filtros.setVisibility( View.GONE );
@@ -95,6 +96,12 @@ public class Horarios extends AppCompatActivity {
             }
         } );
 
+    }
+
+    public void seleccionarHorario( View v) {
+        Intent intent = new Intent( Horarios.this, DatosPaciente.class );
+        startActivity(intent);
+        finish();
     }
 
     public void mostrarPopup( View v){

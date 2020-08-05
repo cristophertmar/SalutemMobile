@@ -48,21 +48,19 @@
                     android:layout_width="350dp"
                     android:layout_height="wrap_content">
 
-                    <FrameLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
-
-                        <ImageView
-                            android:id="@+id/iv_cerrarFiltro"
-                            android:layout_marginBottom="5dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/ic_cerrar"
-                            />
-
-                    </FrameLayout>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/tv_cerrarFiltro"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="X"
+                        android:textStyle="bold"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:background="@drawable/cercle_primary_background"
+                        />
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -72,15 +70,38 @@
                         <TextView
                             android:textStyle="bold"
                             android:text="Médico:"
-                            android:textColor="@color/colorblue"
+                            android:textColor="@color/colorInput"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
-                        <fr.ganfra.materialspinner.MaterialSpinner
-                            app:ms_highlightColor="@color/colorWhite"
-                            app:ms_baseColor="@color/colorblue"
-                            android:id="@+id/sp_medico"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            android:elevation="2dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/background_complete_editext"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_usuario"
+                                />
+
+                            <Spinner
+                                android:paddingLeft="0dp"
+                                android:paddingRight="15dp"
+                                android:id="@+id/sp_medico"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -93,10 +114,10 @@
                         <TextView
                             android:textStyle="bold"
                             android:text="Fecha:"
-                            android:textColor="@color/colorblue"
+                            android:textColor="@color/colorInput"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
-                        <com.google.android.material.textfield.TextInputEditText
+                        <!--<com.google.android.material.textfield.TextInputEditText
                             android:textColor="@color/colorInput"
                             android:textColorHint="@color/colorInput"
                             android:layout_marginTop="17dp"
@@ -105,7 +126,22 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/colorblue"
                             android:hint="(Seleccionar)"
-                            android:inputType="text"/>
+                            android:inputType="text"/>-->
+
+                        <EditText
+                            android:id="@+id/et_fecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableLeft="@drawable/ic_fecha"
+                            android:background="@drawable/background_complete_editext"
+                            android:hint="Fecha de consulta"
+                            android:drawablePadding="8dp"
+                            android:textColor="@color/colorInput"
+                            android:paddingLeft="15dp"
+                            android:inputType="text"
+                            android:elevation="2dp"
+                            android:textColorHint="@color/colorHint" />
 
                     </LinearLayout>
 
@@ -239,6 +275,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -253,6 +290,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -265,8 +303,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -279,8 +317,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -293,8 +331,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -307,8 +345,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -321,8 +359,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -335,8 +373,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -423,6 +461,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -450,6 +489,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -464,6 +504,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -476,8 +517,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -490,8 +531,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -504,8 +545,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -518,8 +559,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -532,8 +573,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -546,8 +587,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -634,6 +675,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -661,6 +703,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -675,6 +718,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -687,8 +731,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -701,8 +745,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -715,8 +759,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -729,8 +773,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -743,8 +787,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -757,8 +801,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -845,6 +889,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -872,6 +917,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -886,6 +932,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -898,8 +945,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -912,8 +959,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -926,8 +973,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -940,8 +987,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -954,8 +1001,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -968,8 +1015,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1056,6 +1103,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -1083,6 +1131,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1097,6 +1146,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1109,8 +1159,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1123,8 +1173,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1137,8 +1187,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1151,8 +1201,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1165,8 +1215,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1179,8 +1229,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1267,6 +1317,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -1294,6 +1345,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1308,6 +1360,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1320,8 +1373,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1334,8 +1387,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1348,8 +1401,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1362,8 +1415,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1376,8 +1429,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1390,8 +1443,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1478,6 +1531,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
+                                android:onClick="mostrarPopup"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
                                 android:src="@drawable/curriculum"
@@ -1505,6 +1559,7 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1519,6 +1574,7 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1531,8 +1587,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1545,8 +1601,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1559,8 +1615,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1573,8 +1629,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1587,8 +1643,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1601,8 +1657,8 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
-
                                 <Button
+                                    android:onClick="seleccionarHorario"
                                     android:layout_marginRight="5dp"
                                     android:elevation="3dp"
                                     android:textStyle="bold"
@@ -1635,6 +1691,222 @@
 
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:onClick="mostrarPopup"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="5dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+
+
 
 
 

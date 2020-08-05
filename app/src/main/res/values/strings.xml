@@ -1,9 +1,20 @@
 <resources>
     <string name="app_name">Salutem24</string>
     <string-array name="Medicos">
-        <item>(Seleccionar)</item>
+        <item>Todos los médicos</item>
         <item>Torres Cardenas Carlos</item>
         <item>Meza Caballero Julio</item>
         <item>Santacruz Medina Fernando</item>
+    </string-array>
+    <string-array name="Pacientes">
+        <item>Seleccione un paciente</item>
+        <item>Torres Cardenas Carlos</item>
+        <item>Meza Caballero Julio</item>
+        <item>Santacruz Medina Fernando</item>
+    </string-array>
+    <string-array name="Genero">
+        <item>Seleccione su género</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
     </string-array>
 </resources>

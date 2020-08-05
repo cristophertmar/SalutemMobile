@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DatosPaciente"></activity>
         <activity android:name=".Horarios" />
         <activity android:name=".Especialidad" />
         <activity android:name=".Registro" />
