@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 public class Especialidad extends AppCompatActivity {
 
-    LinearLayout ly_general;
+    /*LinearLayout ly_general;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class Especialidad extends AppCompatActivity {
         setContentView( R.layout.activity_especialidad );
 
 
-        ly_general = findViewById( R.id.ly_general );
+        /*ly_general = findViewById( R.id.ly_general );
 
         ly_general.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -27,11 +27,18 @@ public class Especialidad extends AppCompatActivity {
                 startActivity( intent );
                 finish();
             }
-        } );
+        } );*/
 
 
 
 
 
     }
+
+    public void seleccionarEspecialidad( View v) {
+        Intent intent = new Intent( Especialidad.this, Horarios.class);
+        startActivity( intent );
+        finish();
+    }
+
 }

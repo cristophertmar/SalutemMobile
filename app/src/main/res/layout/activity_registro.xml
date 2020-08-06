@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/background_orange">
+        android:background="@drawable/background_blue">
 
         <LinearLayout
             android:orientation="vertical"
@@ -18,6 +18,10 @@
             android:layout_height="250dp">
 
             <TextView
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="10"
+                android:shadowDx="2"
+                android:shadowDy="5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salutem24"
@@ -26,6 +30,10 @@
                 android:layout_marginLeft="30dp"
                 android:textSize="40sp" />
             <TextView
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="10"
+                android:shadowDx="2"
+                android:shadowDy="5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Registro de usuario"

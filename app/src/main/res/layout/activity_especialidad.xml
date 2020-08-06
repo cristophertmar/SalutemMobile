@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/background_orange">
+        android:background="@drawable/background_blue">
 
         <LinearLayout
             android:orientation="vertical"
@@ -24,20 +24,28 @@
             android:layout_height="110dp">
 
             <TextView
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="10"
+                android:shadowDx="2"
+                android:shadowDy="5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salutem24"
                 android:textColor="@color/colorWhite"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginLeft="30dp"
-                android:textSize="40sp" />
+                android:textSize="35sp" />
             <TextView
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="10"
+                android:shadowDx="2"
+                android:shadowDy="5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selecciona una especialidad"
                 android:layout_marginLeft="30dp"
                 android:textColor="@color/colorWhite"
-                android:textSize="18sp"/>
+                android:textSize="16sp"/>
 
 
         </LinearLayout>
@@ -58,12 +66,246 @@
                 android:layout_height="wrap_content"
                 android:text="Especialidades"
                 android:textColor="@color/colorPrimary"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:textSize="25dp"/>
 
 
-            <GridLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Medicina General"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Medicina Interna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Ginecología"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Pediatría"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Dermatología"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Otorrinolaringología"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="seleccionarEspecialidad"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/background_card_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:elevation="3dp"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background_circle"
+                        android:src="@drawable/temporal_img"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="Gastroenterología"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--<GridLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:rowCount="3"
                 android:columnCount="2">
@@ -71,7 +313,7 @@
                 <androidx.cardview.widget.CardView
                     android:clickable="true"
                     android:layout_rowWeight="1"
-                    android:layout_width="160dp"
+                    android:layout_width="130dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
 
@@ -91,7 +333,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:textColor="@color/colorblue"
+                            android:textColor="@color/colorOrange"
                             android:layout_marginTop="10dp"
                             android:text="Medicina General"/>
 
@@ -101,7 +343,7 @@
                 <androidx.cardview.widget.CardView
                     android:clickable="true"
                     android:layout_rowWeight="1"
-                    android:layout_width="160dp"
+                    android:layout_width="130dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
 
@@ -302,7 +544,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-            </GridLayout>
+            </GridLayout>-->
 
 
 
