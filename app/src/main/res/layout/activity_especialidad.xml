@@ -97,6 +97,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -129,6 +133,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -161,6 +169,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -193,6 +205,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -225,6 +241,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -257,6 +277,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"
@@ -289,6 +313,10 @@
                         android:padding="12dp"/>
 
                     <TextView
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:textSize="18sp"
                         android:layout_gravity="center"
                         android:textColor="@color/colorWhite"

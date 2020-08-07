@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#73A6FF</color>
-    <color name="colorPrimaryDark">#4E8EF7</color>
-    <color name="colorAccent">#73A6FF</color>
+    <color name="colorPrimary">#0073B0</color>
+    <color name="colorPrimaryDark">#232F3E</color>
+    <color name="colorAccent">#FFB246</color>
     <color name="colorWhite">#FFF</color>
     <color name="colorInput">#474656</color>
     <color name="colorHint">#929193</color>
@@ -12,8 +12,10 @@
     <color name="colorDark">#2F333F</color>
     <color name="colorBlack">#000000</color>
     <color name="colorShadowBlue">#295396</color>
-    <color name="colorOrange">#FC8B62</color>
-    <color name="colorOrangeDark">#F78958</color>
+    <color name="colorOrange">#F0C24F</color>
+    <color name="colorOrangeDark">#FFB246</color>
+    <!--<color name="colorOrange">#FC8B62</color>
+    <color name="colorOrangeDark">#F78958</color>-->
     <!--<color name="colorPrimary">#FE8441</color>
     <color name="colorPrimaryDark">#FE8441</color>-->
 </resources>

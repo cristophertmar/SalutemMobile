@@ -145,6 +145,10 @@
                     </LinearLayout>
 
                     <Button
+                        android:shadowColor="@color/colorOrangeDark"
+                        android:shadowRadius="10"
+                        android:shadowDx="2"
+                        android:shadowDy="5"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:id="@+id/btn_buscar"
@@ -176,7 +180,7 @@
                 <Button
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
-                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowColor="@color/colorOrangeDark"
                     android:shadowRadius="10"
                     android:shadowDx="2"
                     android:shadowDy="5"
@@ -195,7 +199,7 @@
                     android:layout_gravity="center"
                     android:textSize="17sp"
                     android:textStyle="bold"
-                    android:textColor="@color/colorOrange"
+                    android:textColor="@color/colorOrangeDark"
                     android:text="04/08/2020"
                     android:layout_marginBottom="20dp"
                     android:layout_width="wrap_content"
@@ -283,6 +287,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -298,6 +306,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -312,6 +324,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -326,6 +342,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -340,6 +360,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -354,6 +378,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -368,6 +396,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -382,6 +414,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -395,6 +431,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -412,6 +449,7 @@
 
 
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_marginBottom="20dp"
@@ -495,6 +533,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -510,6 +552,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -524,6 +570,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -538,6 +588,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -552,6 +606,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -566,6 +624,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -580,6 +642,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -594,6 +660,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -608,216 +678,6 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
 
-                            </LinearLayout>
-
-
-                        </HorizontalScrollView>
-
-                    </ScrollView>
-
-                    <View
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/colorHint"/>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="250dp"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:textAllCaps="true"
-                                android:textColor="@color/colorblueDark"
-                                android:text="Dr. Uribe Castro, Piero César" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textStyle="bold"
-                                android:textColor="@color/colorInput"
-                                android:textSize="14sp"
-                                android:text="Cardiología"
-                                />
-
-                            <TextView
-                                android:textSize="13sp"
-                                android:textStyle="bold"
-                                android:textColor="@color/colorHintDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Horario: 9:00 hrs - 13:00 hrs."
-
-                                />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:paddingRight="20dp"
-                            android:gravity="right"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:onClick="mostrarPopup"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:src="@drawable/curriculum"
-                                />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                    <ScrollView
-                        android:scrollbars="none"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <HorizontalScrollView
-                            android:scrollbars="none"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
-                                <Button
-                                    android:onClick="seleccionarHorario"
-                                    android:layout_marginRight="6dp"
-                                    android:elevation="3dp"
-                                    android:textStyle="bold"
-                                    android:layout_marginBottom="10dp"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_width="70dp"
-                                    android:layout_height="30dp"
-                                    android:textSize="12sp"
-                                    android:text="15:30"
-                                    android:textColor="#fff"
-                                    android:background="@drawable/boton_secundary_sm" />
 
                             </LinearLayout>
 
@@ -917,6 +777,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -932,6 +796,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -946,6 +814,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -960,6 +832,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -974,6 +850,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -988,6 +868,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1002,6 +886,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1016,6 +904,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1029,6 +921,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -1128,6 +1021,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1143,6 +1040,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1157,6 +1058,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1171,6 +1076,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1185,6 +1094,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1199,6 +1112,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1213,6 +1130,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1227,6 +1148,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1240,6 +1165,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -1339,6 +1265,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1354,6 +1284,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1368,6 +1302,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1382,6 +1320,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1396,6 +1338,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1410,6 +1356,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1424,6 +1374,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1438,6 +1392,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1451,6 +1409,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -1550,6 +1509,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1565,6 +1528,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1579,6 +1546,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1593,6 +1564,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1607,6 +1582,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1621,6 +1600,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1635,6 +1618,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1649,6 +1636,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1662,6 +1653,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -1761,6 +1753,10 @@
                                 android:layout_height="wrap_content">
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1776,6 +1772,10 @@
                                     android:background="@drawable/boton_secundary_sm" />
 
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1790,6 +1790,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1804,6 +1808,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1818,6 +1826,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1832,6 +1844,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1846,6 +1862,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1860,6 +1880,10 @@
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
                                 <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
                                     android:onClick="seleccionarHorario"
                                     android:layout_marginRight="6dp"
                                     android:elevation="3dp"
@@ -1873,6 +1897,7 @@
                                     android:text="15:30"
                                     android:textColor="#fff"
                                     android:background="@drawable/boton_secundary_sm" />
+
 
                             </LinearLayout>
 
@@ -1890,10 +1915,494 @@
 
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:onClick="mostrarPopup"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
 
 
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorblueDark"
+                                android:text="Dr. Uribe Castro, Piero César" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorInput"
+                                android:textSize="14sp"
+                                android:text="Cardiología"
+                                />
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHintDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Horario: 9:00 hrs - 13:00 hrs."
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingRight="20dp"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:onClick="mostrarPopup"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/curriculum"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <ScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+                                <Button
+                                    android:shadowColor="@color/colorblueDark"
+                                    android:shadowRadius="10"
+                                    android:shadowDx="2"
+                                    android:shadowDy="5"
+                                    android:onClick="seleccionarHorario"
+                                    android:layout_marginRight="6dp"
+                                    android:elevation="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp"
+                                    android:textSize="12sp"
+                                    android:text="15:30"
+                                    android:textColor="#fff"
+                                    android:background="@drawable/boton_secundary_sm" />
+
+
+                            </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"/>
+
+
+                </LinearLayout>
 
 
 

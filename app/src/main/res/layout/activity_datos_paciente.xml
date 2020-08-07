@@ -280,7 +280,7 @@
                     android:textColorHint="@color/colorHint" />
 
                 <Button
-                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowColor="@color/colorOrangeDark"
                     android:shadowRadius="10"
                     android:shadowDx="2"
                     android:shadowDy="5"
