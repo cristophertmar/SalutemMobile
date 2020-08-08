@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
         bt_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent().setClass(Login.this, Especialidad.class);
+                Intent intent = new Intent().setClass(Login.this, Menu.class);
                 startActivity(intent);
                 finish();
             }

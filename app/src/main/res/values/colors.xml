@@ -12,8 +12,13 @@
     <color name="colorDark">#2F333F</color>
     <color name="colorBlack">#000000</color>
     <color name="colorShadowBlue">#295396</color>
-    <color name="colorOrange">#F0C24F</color>
-    <color name="colorOrangeDark">#FFB246</color>
+    <color name="colorOrange">#FFB246</color>
+    <color name="colorOrangeDark">#FE9068</color>
+
+    <!--<color name="colorOrange">#F0C24F</color>
+    <color name="colorOrangeDark">#FFB246</color>-->
+
+
     <!--<color name="colorOrange">#FC8B62</color>
     <color name="colorOrangeDark">#F78958</color>-->
     <!--<color name="colorPrimary">#FE8441</color>
