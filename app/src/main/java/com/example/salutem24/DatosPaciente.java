@@ -3,9 +3,11 @@ package com.example.salutem24;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -16,6 +18,7 @@ public class DatosPaciente extends AppCompatActivity {
 
     Spinner sp_paciente, sp_genero;
     EditText et_fecha;
+    Button btn_afiliar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +28,21 @@ public class DatosPaciente extends AppCompatActivity {
         sp_paciente = findViewById( R.id.sp_paciente );
         sp_genero = findViewById( R.id.sp_genero );
         et_fecha = findViewById( R.id.et_fecha );
+        btn_afiliar = findViewById( R.id.btn_afiliar );
 
         et_fecha.setFocusable(false);
         et_fecha.setKeyListener(null);
+
+
+        btn_afiliar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent().setClass(DatosPaciente.this, PagarConsulta.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource( this, R.array.Pacientes, android.R.layout.simple_spinner_item );
         adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item );

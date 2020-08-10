@@ -188,6 +188,64 @@
                     </LinearLayout>
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/background_top_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginBottom="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="180dp"
+                            android:src="@drawable/programadas" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-18dp"
+                        android:background="@drawable/background_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver mis consultas"
+                            />
+
+                        <Button
+                            android:layout_marginBottom="10dp"
+                            android:elevation="6dp"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/boton_primary_xs"
+                            android:text="Ver Consultas"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
 

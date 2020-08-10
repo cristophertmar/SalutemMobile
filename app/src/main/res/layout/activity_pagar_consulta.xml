@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DatosPaciente">
+    tools:context=".PagarConsulta">
 
     <ScrollView
         android:scrollbars="none"
@@ -32,7 +32,7 @@
                     android:shadowDy="5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Agregar Paciente"
+                    android:text="Pagar Consultas"
                     android:textColor="@color/colorWhite"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
@@ -54,82 +54,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seleccionar un Paciente"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_marginBottom="10dp"
-                    android:textSize="20dp"/>
-
-                <LinearLayout
-                    android:layout_marginTop="12dp"
-                    android:orientation="horizontal"
-                    android:elevation="2dp"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
-                    android:background="@drawable/background_complete_editext"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_usuario"
-                        />
-
-                    <Spinner
-                        android:paddingLeft="0dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/sp_paciente"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="30dp"
-                    android:gravity="center_horizontal"
-                    android:paddingRight="30dp">
-
-                    <View
-                        android:layout_marginTop="10dp"
-                        android:layout_width="130dp"
-                        android:layout_height="0.8dp"
-                        android:background="@drawable/separador"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:layout_width="25dp"
-                        android:layout_height="wrap_content"
-                        android:text="Ó"/>
-
-                    <View
-                        android:layout_marginTop="10dp"
-                        android:layout_width="130dp"
-                        android:layout_height="0.8dp"
-                        android:background="@drawable/separador"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Crear un nuevo Paciente"
+                    android:text="Datos de la tarjeta"
                     android:textColor="@color/colorPrimary"
                     android:layout_marginBottom="10dp"
                     android:textSize="20dp"/>
@@ -138,9 +63,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="12dp"
-                    android:drawableLeft="@drawable/ic_dni"
+                    android:drawableLeft="@drawable/ic_tarjeta"
                     android:background="@drawable/background_top_editext"
-                    android:hint="Nro. de DNI"
+                    android:hint="Marca"
                     android:drawablePadding="8dp"
                     android:textSize="16sp"
                     android:textColor="@color/colorBlack"
@@ -148,57 +73,13 @@
                     android:inputType="number"
                     android:elevation="2dp"
                     android:textColorHint="@color/colorHint" />
-
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="5dp"
-                    android:drawableLeft="@drawable/ic_usuario"
+                    android:drawableLeft="@drawable/ic_tarjeta"
                     android:background="@drawable/background_middle_editext"
-                    android:hint="Nombres"
-                    android:drawablePadding="8dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/colorBlack"
-                    android:paddingLeft="15dp"
-                    android:inputType="text"
-                    android:elevation="2dp"
-                    android:textColorHint="@color/colorHint" />
-
-                <!--<LinearLayout
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal"
-                    android:elevation="2dp"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
-                    android:background="@drawable/background_middle_editext"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_usuario"
-                        />
-
-                    <Spinner
-                        android:paddingLeft="0dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/sp_paciente"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </LinearLayout>-->
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:drawableLeft="@drawable/ic_apellido"
-                    android:background="@drawable/background_middle_editext"
-                    android:hint="Apellido paterno"
+                    android:hint="Nro. de tarjeta"
                     android:drawablePadding="8dp"
                     android:textSize="16sp"
                     android:textColor="@color/colorBlack"
@@ -207,58 +88,17 @@
                     android:elevation="2dp"
                     android:textColorHint="@color/colorHint" />
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="5dp"
-                    android:drawableLeft="@drawable/ic_apellido"
-                    android:background="@drawable/background_middle_editext"
-                    android:hint="Apellido materno"
-                    android:drawablePadding="8dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/colorBlack"
-                    android:paddingLeft="15dp"
-                    android:inputType="text"
-                    android:elevation="2dp"
-                    android:textColorHint="@color/colorHint" />
-
-                <LinearLayout
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal"
-                    android:elevation="2dp"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
-                    android:background="@drawable/background_middle_editext"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_genero"
-                        />
-
-                    <Spinner
-                        android:paddingLeft="0dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/sp_genero"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </LinearLayout>
-
-                <EditText
+                    android:onClick="MonthYearShow"
                     android:id="@+id/et_fecha"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="5dp"
                     android:drawableLeft="@drawable/ic_fecha"
                     android:background="@drawable/background_middle_editext"
-                    android:hint="Fecha de nacimiento"
+                    android:hint="Fecha expiración"
                     android:drawablePadding="8dp"
-                    android:textColor="@color/colorInput"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
                     android:paddingLeft="15dp"
                     android:inputType="text"
                     android:elevation="2dp"
@@ -268,9 +108,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="5dp"
-                    android:drawableLeft="@drawable/ic_celular"
+                    android:drawableLeft="@drawable/ic_contrasena"
                     android:background="@drawable/background_bottom_editext"
-                    android:hint="Nro. de celular"
+                    android:hint="Código de seguridad"
                     android:drawablePadding="8dp"
                     android:textSize="16sp"
                     android:textColor="@color/colorBlack"
@@ -279,17 +119,75 @@
                     android:elevation="2dp"
                     android:textColorHint="@color/colorHint" />
 
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titular de la tarjeta"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_usuario"
+                    android:background="@drawable/background_top_editext"
+                    android:hint="Nombre"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="15dp"
+                    android:inputType="text"
+                    android:elevation="2dp"
+                    android:textColorHint="@color/colorHint" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_apellido"
+                    android:background="@drawable/background_middle_editext"
+                    android:hint="Apellido"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="15dp"
+                    android:inputType="text"
+                    android:elevation="2dp"
+                    android:textColorHint="@color/colorHint" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_correo"
+                    android:background="@drawable/background_bottom_editext"
+                    android:hint="Correo"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="15dp"
+                    android:inputType="text"
+                    android:elevation="2dp"
+                    android:textColorHint="@color/colorHint" />
+
+
+
                 <Button
-                    android:id="@+id/btn_afiliar"
                     android:shadowColor="@color/colorOrangeDark"
                     android:shadowRadius="10"
                     android:shadowDx="2"
                     android:shadowDy="5"
+                    android:id="@+id/btn_afiliar"
                     android:layout_gravity="center"
                     android:layout_marginTop="35dp"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
-                    android:text="Afiliar y Continuar"
+                    android:text="Pagar S/50.00"
                     android:textColor="#fff"
                     android:layout_marginBottom="50dp"
                     android:background="@drawable/boton_primary_sm" />
