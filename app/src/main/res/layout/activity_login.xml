@@ -107,11 +107,12 @@
                         android:text="Recuérdame"/>
 
                     <TextView
+                        android:onClick="olvido_contrasena"
                         android:layout_marginTop="4dp"
                         android:text="¿Olvidé contraseña?"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorInput"
+                        android:textColor="@color/colorPrimary"
                         android:layout_gravity="right"/>
 
                 </FrameLayout>
